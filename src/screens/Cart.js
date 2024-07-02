@@ -1,6 +1,5 @@
 import React from 'react';
 import { useCart, useDispatchCart } from '../components/ContextReducer';
-import DeleteIcon from '@mui/icons-material/Delete';
 import trashIcon from '../trash.svg';
 
 export default function Cart() {
@@ -22,7 +21,7 @@ export default function Cart() {
   const handleCheckOut = async () => {
     try {
       let userEmail = localStorage.getItem("userEmail");
-      let response = await fetch("http://localhost:5000/api/orderData", {
+      let response = await fetch("https://gofoodbackend-1-ydn6.onrender.com/api/orderData", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
