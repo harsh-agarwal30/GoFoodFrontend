@@ -20,7 +20,7 @@ export default function Signup() {
       const position = await navLocation();
       const { latitude, longitude } = position.coords;
 
-      const response = await fetch("http://localhost:5000/api/getlocation", {
+      const response = await fetch("https://gofoodbackend-1-ydn6.onrender.com/api/getlocation", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
