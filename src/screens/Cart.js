@@ -1,6 +1,5 @@
 import React from 'react';
 import { useCart, useDispatchCart } from '../components/ContextReducer';
-import DeleteIcon from '@mui/icons-material/Delete';
 import trashIcon from '../trash.svg';
 
 export default function Cart() {
